@@ -1,5 +1,7 @@
 # Opinaí (v1)
 
+[Leia em português](README.pt-br.md)
+
 A movie, series and anime review website.
 
 > **A 2024 project.** This was my first project using HTML, CSS and JavaScript,
@@ -11,6 +13,12 @@ A movie, series and anime review website.
 > responsive. I'm building a new version from scratch to show how much I've
 > learned since then.
 
+## What's in this version
+
+- Home page with navbar, movie carousel, and sliders for "Trending" and "Anime"
+- Work details page (example: Baby Reindeer) with banner, synopsis, cast, trailer, and suggestions
+- Dark layout with orange accents
+
 ## Technologies
 
 HTML, CSS, JavaScript and Bootstrap 4.
@@ -18,6 +26,29 @@ HTML, CSS, JavaScript and Bootstrap 4.
 ## How to open
 
 Download the project and open `index.html` in your browser.
+
+## Project structure
+
+```
+opinai-v1/
+├── index.html       # Home page: navbar, carousel and work sliders
+├── pagina.html      # Work details page (example: Baby Reindeer)
+├── css/
+│   ├── style.css    # Home page styles
+│   └── pagina.css   # Details page styles
+├── js/
+│   └── script.js    # Slider behavior and button messages
+├── README.md        # Project description (English)
+├── README.pt-br.md  # Project description (Portuguese)
+└── LICENSE          # MIT License
+```
+
+- **`index.html`**: structure of the home page.
+- **`pagina.html`**: structure of a work's details page.
+- **`style.css`** and **`pagina.css`**: look of each page (dark theme, cards, slider buttons, small-screen adjustments).
+- **`script.js`**: makes the sliders scroll sideways and shows the messages for login, sign-up, and search.
+
+Bootstrap and jQuery are not stored in the repository: they are loaded from the internet through the links in the HTML.
 
 ## Limitations of this version
 
@@ -36,44 +67,3 @@ planned for v2.
 - The website content is in Brazilian Portuguese.
 - Posters and banners belong to their respective owners and are used for
   study purposes only.
-
-  ---
-  
-  # Opinaí (v1)
-
-Site de resenhas de filmes, séries e animes.
-
-> **Projeto de 2024.** Foi meu primeiro projeto com HTML, CSS e JavaScript,
-> feito em um curso de programação para internet. Está publicado como registro
-> do meu ponto de partida.
->
-> Reconheço que este código está desatualizado e tem limitações conhecidas:
-> a estrutura é repetitiva, partes do site ainda não funcionam e o layout não
-> é totalmente responsivo. Estou desenvolvendo uma nova versão do zero para
-> mostrar o quanto evoluí desde então.
-
-## Tecnologias
-
-HTML, CSS, JavaScript e Bootstrap 4.
-
-## Como abrir
-
-Baixe o projeto e abra o arquivo `index.html` no navegador.
-
-## Limitações desta versão
-
-Login, cadastro, busca, favoritos e comentários ainda não funcionam. Eles
-estão planejados para a v2.
-
-## Próximos passos (v2)
-
-- Gerar os cards a partir de uma lista de dados em JavaScript
-- Uma única página de detalhes para todas as obras
-- Busca, favoritos e comentários salvos no navegador
-- Layout responsivo pensando primeiro no celular
-
-## Observações
-
-- O conteúdo do site está em português do Brasil.
-- Os pôsteres e banners pertencem aos seus respectivos donos e são usados
-  apenas para fins de estudo.
