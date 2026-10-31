@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opinaí</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Opinaí</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto"></ul>
+        <div class="navbar-nav align-items-center">
+            <button class="btn btn-outline-light mx-1" id="btn-cadastro">Cadastro</button>
+            <button class="btn btn-outline-light mx-1" id="btn-login">Login</button>
+            <input type="search" class="form-control ml-2" id="search" placeholder="Pesquisar..." aria-label="Pesquisar obras" />
+            <span aria-label="Usuário não logado" title="Usuário não logado" class="ml-2">👤</span>
+        </div>
+    </div>
+</nav>
+
+<!-- Categorias -->
+<div id="category-bar" class="d-flex justify-content-between align-items-center flex-wrap">
+    <div class="btn-group btn-group-left" role="group" aria-label="Categorias principais">
+        <button type="button" class="btn btn-accent">Filmes</button>
+        <button type="button" class="btn btn-accent">Séries</button>
+        <button type="button" class="btn btn-accent">Animes</button>
+        <button type="button" class="btn btn-accent">Livros</button>
+    </div>
+    <div class="btn-group btn-group-right" role="group" aria-label="Filtros e inspirações">
+        <button type="button" class="btn btn-success">Pequenos Começos</button>
+        <button type="button" class="btn btn-success">Inspiraí</button>
+        <button type="button" class="btn btn-success">Gênero</button>
+    </div>
+</div>
+
+<!-- Carousel -->
+<div id="movieCarousel" class="carousel slide" data-ride="carousel" aria-label="Carrossel de principais filmes no cinema">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://novouae.gumlet.io/Files//Movie/997x498/thunderbolts-1.jpg?w=480&amp;dpr=2.6" class="d-block w-100" alt="Pôster do filme Thunderbolts*" />
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://www.un.uniaodosherois.com.br/images/posts/4232-lilo-stitch-ganha-poster-oficial-de-live-action-tb.jpg" class="d-block w-100" alt="Pôster do filme Lilo &amp; Stitch" />
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/sac3HWs0BlI/maxresdefault.jpg" class="d-block w-100" alt="Imagem do filme Missão: Impossível – O Acerto Final" />
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#movieCarousel" role="button" data-slide="prev" aria-label="Filme anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#movieCarousel" role="button" data-slide="next" aria-label="Próximo filme">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>
+
+<!-- Obras em Alta -->
+<section class="container my-4">
+    <h2 class="text-light">Obras em Alta</h2>
+
+    <div class="slider-container" aria-label="Slider de obras em alta">
+        <button class="slider-button slider-prev" id="prev-works" aria-label="Obras anteriores" disabled>&#9664;</button>
+        <div class="cards-scroll" id="high-works">
+
+            <div class="card">
+                <img src="https://uauposters.com.br/media/catalog/product/5/2/523420201013-uau-posters-filmes-parasite-parasite-1.jpg" alt="Pôster: Parasita" />
+                <div class="card-body">
+                    <h5 class="card-title">Parasita</h5>
+                    <p class="card-text">Thriller, Drama</p>
+                    <p class="card-text">⭐ 8.6</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://media.fstatic.com/0QMlNazh2uViTEmYPrTRgUiIi5s=/322x478/smart/filters:format(webp)/media/movies/covers/2024/04/qJrby4RoCXPk3i8gdTA4PonwXwf.jpg" alt="Pôster: Bebê Rena" />
+                <div class="card-body">
+                    <a href="pagina.html"><h5 class="card-title">Bebê Rena</h5></a>
+                    <p class="card-text">Drama, Psicológico</p>
+                    <p class="card-text">⭐ 8.5</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.awsli.com.br/2500x2500/1610/1610163/produto/177680448/poster-joker-coringa-a-5cedbd11.jpg" alt="Pôster: Coringa" />
+                <div class="card-body">
+                    <h5 class="card-title">Coringa</h5>
+                    <p class="card-text">Crime, Drama</p>
+                    <p class="card-text">⭐ 8.5</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://uauposters.com.br/media/catalog/product/4/1/411320150509-uau-posters-filmes-interestelar-interestellar.jpg" alt="Pôster: Interestelar" />
+                <div class="card-body">
+                    <h5 class="card-title">Interestelar</h5>
+                    <p class="card-text">Ficção Científica, Drama</p>
+                    <p class="card-text">⭐ 8.6</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="slider-button slider-next" id="next-works" aria-label="Próximas obras">&#9654;</button>
+    </div>
+</section>
+
+<!-- Animes -->
+<section class="container my-4">
+    <h2 class="text-light">Animes</h2>
+
+    <div class="slider-container" aria-label="Slider de animes">
+        <button class="slider-button slider-prev" id="prev-animes" aria-label="Animes anteriores" disabled>&#9664;</button>
+        <div class="cards-scroll" id="anime-cards">
+
+            <div class="card">
+                <img src="https://a-static.mlcdn.com.br/1500x1500/poster-gigante-attack-on-titan-editora-europa/eurobest/60224/39ed0f8813262b3e0863928a6a97128d.jpg" alt="Pôster: Attack on Titan" />
+                <div class="card-body">
+                    <h5 class="card-title">Attack on Titan</h5>
+                    <p class="card-text">Ação, Fantasia</p>
+                    <p class="card-text">⭐ 9.0</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.ebayimg.com/00/s/MTYwMFgxMDUz/z/reYAAOSwfcFkgxQX/$_57.JPG?set_id=880000500F" alt="Pôster: Demon Slayer" />
+                <div class="card-body">
+                    <h5 class="card-title">Demon Slayer</h5>
+                    <p class="card-text">Ação, Fantasia</p>
+                    <p class="card-text">⭐ 8.6</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71OSmB6lQBL.jpg" alt="Pôster: One Punch Man" />
+                <div class="card-body">
+                    <h5 class="card-title">One Punch Man</h5>
+                    <p class="card-text">Ação, Comédia</p>
+                    <p class="card-text">⭐ 8.8</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.europosters.eu/image/1300/129089.jpg" alt="Pôster: Naruto" />
+                <div class="card-body">
+                    <h5 class="card-title">Naruto</h5>
+                    <p class="card-text">Ação, Aventura</p>
+                    <p class="card-text">⭐ 8.1</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="slider-button slider-next" id="next-animes" aria-label="Próximos animes">&#9654;</button>
+    </div>
+</section>
+
+<!-- Bootstrap & JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
